@@ -5,12 +5,13 @@
 package main
 
 import (
-	"github.com/Yuukiiii/geekbangWeek04/internal/biz"
+	"github.com/Yuukiiii/geekbangWeek04new/internal/server"
 	"github.com/google/wire"
 	"net/http"
 )
 
 // initApp init application.
 func initServer(portHelloWorld int, m string) *http.Server {
-	panic(wire.Build(biz.ProviderSet, server.ProviderSet))
+	panic(wire.Build(server.ProviderSet))
+	return &http.Server{}
 }

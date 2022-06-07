@@ -7,7 +7,7 @@ import (
 )
 
 // ProviderSet is server providers.
-var ProviderSet = wire.NewSet(NewHelloWorldServer, NewGreeter)
+var ProviderSet = wire.NewSet(NewHelloWorldServer, NewMessage, NewGreeter)
 
 type HelloWorldHandler struct{}
 

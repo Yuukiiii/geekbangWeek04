@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/Yuukiiii/geekbangWeek04/configs"
+	"github.com/Yuukiiii/geekbangWeek04new/configs"
 	"github.com/spf13/cobra"
 	"golang.org/x/sync/errgroup"
 	"os"

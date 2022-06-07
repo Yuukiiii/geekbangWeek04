@@ -6,8 +6,7 @@
 package main
 
 import (
-	"fmt"
-	"github.com/Yuukiiii/geekbangWeek04/internal/server"
+	"github.com/Yuukiiii/geekbangWeek04new/internal/server"
 	"net/http"
 )
 
@@ -20,8 +19,5 @@ import (
 // initApp init application.
 func initServer(portHelloWorld int, m string) *http.Server {
 	httpServer := server.NewHelloWorldServer(portHelloWorld)
-	message := server.NewMessage(m)
-	greeter := server.NewGreeter(message)
-	fmt.Println(greeter.Greet())
 	return httpServer
 }
